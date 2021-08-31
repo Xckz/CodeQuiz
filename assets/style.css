@@ -40,8 +40,7 @@ body {
 
 .start-screen {
     text-align: center;
-    width: 600;
-    margin: 5px 0;
+    margin: 5px 150px;
     font-size: 20px;
     left: 50%;
     padding-top: 400px;
@@ -55,6 +54,17 @@ body {
     font-size: 40px;
     font-weight: 700;
     color: var(--blue);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(
+            to right,
+            var(--light),
+            var(--darkgreen),
+            var(--light)
+        )
+        1;
 }
 
 a {
@@ -62,6 +72,7 @@ a {
     font-size: 22px;
     text-decoration: none;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .timer {
