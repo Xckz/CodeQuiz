@@ -1,6 +1,7 @@
 :root {
     --blue: lightseagreen;
     --light: #fff;
+    --dark: #000;
     --darkgreen: rgb(20, 114, 109);
     --lightblue: rgb(66, 221, 195);
 }
@@ -86,4 +87,36 @@ a {
 
 .timer-seconds {
     color: var(--blue);
+}
+
+.questionText {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.answerList {
+    display: block;
+    padding: 10px 0;
+}
+
+.answerText {
+    background: var(--blue);
+    border: 2px solid var(--darkgreen);
+    color: var(--light);
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answerText:hover {
+    background: var(--lightblue);
+    color: var(--darkgreen);
+    cursor: pointer;
+}
+
+.questions {
+    opacity: 0;
 }
