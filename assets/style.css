@@ -1,0 +1,40 @@
+:root {
+    --blue: lightseagreen;
+    --light: #fff;
+}
+
+button {
+    background-color: var(--blue);
+    color: var(--light);
+}
+
+.timer {
+    float: right;
+}
+
+.center {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.questionBox {
+    text-align: center;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.questionText {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.answerText {
+    background-color: var(--blue);
+    display: block;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
