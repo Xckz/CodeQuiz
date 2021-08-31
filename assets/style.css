@@ -1,40 +1,78 @@
 :root {
     --blue: lightseagreen;
     --light: #fff;
+    --darkgreen: rgb(20, 114, 109);
+    --lightblue: rgb(66, 221, 195);
 }
 
-button {
-    background-color: var(--blue);
+* {
+    font-family: Calibri, sans-serif;
+}
+
+body {
+    background: var(--light);
+}
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-button button {
+    font-size: 30px;
+    font-weight: 500;
     color: var(--light);
+    padding: 7px 15px;
+    border-color: var(--darkgreen);
+    border-width: 3px;
+    border-radius: 8px;
+    background: var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-button button:hover {
+    background: var(--lightblue);
+    color: var(--darkgreen);
+}
+
+.start-screen {
+    text-align: center;
+    width: 600;
+    margin: 5px 0;
+    font-size: 20px;
+    left: 50%;
+    padding-top: 400px;
+    transform: translate(0%, -50%);
+}
+
+.start-screen .title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+a {
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .timer {
-    float: right;
-}
-
-.center {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.questionBox {
-    text-align: center;
-    padding-left: 18%;
-    padding-right: 18%;
-}
-
-.questionText {
-    text-align: left;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.answerText {
-    background-color: var(--blue);
-    display: block;
-    border-radius: 8px;
-    padding: 6px 12px;
-    margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    float: right;
+    justify-content: space-between;
+    width: 10%;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.timer-seconds {
+    color: var(--blue);
 }
