@@ -17,6 +17,7 @@
                 </div>
             </nav>
         </header>
+
         <!-- Start Screen to Begin Quiz -->
 
         <div class="start-screen">
@@ -61,30 +62,19 @@
             </section>
             <section>
                 <h1 class="questionText">
-                    Which includes proper syntax in JavaScript?
+                    What are arrays used for?
                 </h1>
                 <div class="answerList">
                     <button class="answerText">
-                        1. message("I'm from Mars");
+                        1. They are used to choose colors
                     </button>
-                    <button class="answerText">2. text(I'm from Mars);</button>
+                    <button class="answerText">2. They are used for changing multiple colors with a single variable</button>
                     <button class="answerText">
-                        3. alert("I'm from Mars");
+                        3. They are used for storing multiple values in a single variable
                     </button>
                     <button class="answerText">
-                        4. prompt="I'm from Mars"
+                        4. They are used for storing multiple colors
                     </button>
-                </div>
-            </section>
-            <section>
-                <h1 class="questionText">How does a FOR loop start?</h1>
-                <div class="answerList">
-                    <button class="answerText">
-                        1. for (i = 0; i <= 1; i++)
-                    </button>
-                    <button class="answerText">2. for i = 1 to 10</button>
-                    <button class="answerText">3. for (i <= 10; i++)</button>
-                    <button class="answerText">4. for (i = 0; i <=10)</button>
                 </div>
             </section>
             <section>
@@ -135,17 +125,6 @@
             </section>
             <section>
                 <h1 class="questionText">
-                    Which of the following is an id in CSS?
-                </h1>
-                <div class="answerList">
-                    <button class="answerText">1. :root {</button>
-                    <button class="answerText">2. button {</button>
-                    <button class="answerText">3. .answerText {</button>
-                    <button class="answerText">4. #timer {</button>
-                </div>
-            </section>
-            <section>
-                <h1 class="questionText">
                     Which of the following is the best resource for information
                     regarding Web Development?
                 </h1>
@@ -156,6 +135,23 @@
                     <button class="answerText">4. Facebook</button>
                 </div>
             </section>
+        </div>
+
+        <!-- End Screen to Submit Scores -->
+
+        <div class="endScreen">
+            <h1 class="title">All done!</h1>
+            <div class="endScreen2">
+                <p>You got a score of <div class="score">. . .</div>
+                </p>
+            <input
+                type="text"
+                name="user"
+                placeholder="Enter Name..."
+                class="hsname hsinput"
+            />
+            <div class="submit"><button>Submit</button></div>
+            </div>
         </div>
 
         <script src="./assets/javascript.js"></script>

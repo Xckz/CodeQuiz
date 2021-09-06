@@ -48,13 +48,34 @@ body {
     transform: translate(0%, -50%);
 }
 
-.start-screen .title {
+.title {
     width: 100%;
     display: block;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     color: var(--blue);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(
+            to right,
+            var(--light),
+            var(--darkgreen),
+            var(--light)
+        )
+        1;
+}
+
+.highscoreList .title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-top: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-width: 4px;
@@ -117,6 +138,57 @@ a {
     cursor: pointer;
 }
 
-.questions {
+/* .questions {
     opacity: 0;
+} */
+
+.endScreen {
+    position: relative;
+    padding-bottom: 200px;
+}
+
+/* .endScreen2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.submit button {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--light);
+    padding: 3px 7px;
+    border-color: var(--darkgreen);
+    border-width: 3px;
+    border-radius: 8px;
+    background: var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit button:hover {
+    background: var(--lightblue);
+    color: var(--darkgreen);
+}
+
+.hsname {
+    height: 30px;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.instructions {
+    padding-top: 25px;
+}
+
+.score {
+    display: inline-block;
 }
